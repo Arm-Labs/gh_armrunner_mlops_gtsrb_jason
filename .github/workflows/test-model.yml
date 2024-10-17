@@ -17,7 +17,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: traffic_sign_net
-          run-id: 11331644497
+          run-id: 31695811511
           github-token: ${{ secrets.GITHUB_TOKEN }}
       - name: Run testing script
         run: python scripts/test_model.py --model traffic_sign_net.pth
