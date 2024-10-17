@@ -8,7 +8,7 @@ jobs:
     name: Test the Model
     runs-on: ubuntu-22.04-arm-os # Custom ARM64 runner
     container:
-      image: armswdev/pytorch-arm-neoverse:r24.07-torch-2.3.0-openblas
+      image: armswdev/pytorch-arm-neoverse:r24.07-torch-2.3.0-onednn-acl
       options: --user root
     steps:
       - name: Checkout code
